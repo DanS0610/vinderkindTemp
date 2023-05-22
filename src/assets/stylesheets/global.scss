@@ -474,9 +474,208 @@ body {
     font-size: 13px !important;
   }
 }
-// @media (min-width: 540px) and (max-width: 720px) {
-// }
-// @media (min-width: 720px) and (max-width: 1024px) {
-// }
-// @media (min-width: 1024px) {
-// }
+@media (min-width: 540px) and (max-width: 720px) {
+  #app {
+    height: fit-content !important;
+    overflow-x: hidden !important;
+  }
+  .full-body-container {
+    background-color: #9601c71a;
+  }
+  .router-view-container {
+    padding-bottom: 0;
+  }
+  .main-body-container {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1rem !important;
+  }
+  .landing-image-container {
+    background-color: transparent;
+  }
+  .title-row-landing {
+    display: none !important;
+  }
+  .landing-img-padding {
+    max-height: 33rem;
+    transition: all 0.1s ease 0s;
+  }
+  .landing-main-img {
+    max-width: 35rem;
+    left: 20%;
+    top: 0;
+    position: relative;
+    opacity: 1;
+    z-index: 21;
+  }
+  .landing-title-img {
+    width: 11.688rem;
+    height: 3.438rem;
+  }
+  .full-screen-nav {
+    display: none !important;
+  }
+  .mobile-collapsed-nav {
+    display: block;
+  }
+  .home-view-title {
+    display: none;
+  }
+  .tel-row-landing {
+    padding-top: 0;
+    width: 100% !important;
+  }
+  .tel-col-landing {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: transparent;
+  }
+  .tel-col-thank {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: $base-background-yellow;
+  }
+  .sub-row-landing {
+    padding-top: 2rem;
+    max-width: 100% !important;
+  }
+  .sub-col-landing {
+    height: fit-content;
+    max-width: 100% !important;
+    height: 30rem !important;
+  }
+  .mobile-full-width {
+    width: 100% !important;
+  }
+  #subscription-container {
+    flex-direction: column !important;
+  }
+  #sign-up-label {
+    bottom: 1.5rem !important;
+    left: 25% !important;
+  }
+  #price-toggle {
+    height: 40% !important;
+  }
+  #benefits-list {
+    height: 45% !important;
+  }
+  .footer-row {
+    height: 3rem !important;
+  }
+  .footer-copyright p {
+    margin-top: revert;
+  }
+  .subscbibe-form-div {
+    max-width: 100%;
+  }
+  .small-input-container {
+    flex-direction: column !important;
+  }
+
+  .mobile-small-font {
+    font-size: $base-small-font-size !important;
+  }
+  .mobile-medium-font {
+    font-size: $base-medium-font-size !important;
+  }
+  .mobile-large-font {
+    font-size: 36px !important;
+  }
+  #sub-btn,
+  #account-btn {
+    max-width: 100% !important;
+    font-size: $base-medium-font-size !important;
+    color: white !important;
+  }
+  .mobile-90-percent {
+    width: 90% !important;
+  }
+  .hidden-desktop {
+    display: block;
+  }
+  #thank-you-row-t1 {
+    margin-bottom: 5rem;
+  }
+  #thank-you-row-t3 {
+    margin-bottom: 2.7rem;
+  }
+  #tel-row-thank {
+    margin-bottom: 1rem;
+  }
+  #copyright-text {
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 720px) and (max-width: 1024px) {
+  .tel-row-landing {
+    padding-top: 0;
+    width: 100% !important;
+  }
+  .tel-col-landing {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .tel-col-thank {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: $base-background-yellow;
+  }
+  .sub-row-landing {
+    padding-top: 2rem;
+    max-width: 100% !important;
+  }
+  .sub-col-landing {
+    height: fit-content !important;
+    max-width: 100% !important;
+    height: 30rem !important;
+  }
+  #subscription-container {
+    flex-direction: column !important;
+  }
+  #price-toggle,
+  #benefits-list {
+    width: 100% !important;
+  }
+  #sign-up-label {
+    top: 1.5rem !important;
+    left: 10% !important;
+  }
+  .footer-btns a {
+    font-size: 13px !important;
+  }
+  #copyright-text {
+    text-align: center;
+  }
+  .landing-main-img {
+    max-width: 30rem !important;
+    left: 10% !important;
+    top: 50% !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .tel-row-landing {
+    width: 100% !important;
+  }
+  .tel-col-landing {
+    width: 100% !important;
+  }
+  .sub-row-landing {
+    width: 100% !important;
+  }
+  .sub-col-landing {
+    width: 100% !important;
+  }
+  .tel-row-thank {
+    width: 100% !important;
+  }
+  .tel-col-thank {
+    width: 100% !important;
+  }
+  .sub-row-landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
