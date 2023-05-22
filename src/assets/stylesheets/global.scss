@@ -103,7 +103,7 @@ body {
 }
 .sub-row-landing {
   padding-top: 6.813rem;
-  margin-bottom: 5rem;
+  margin-bottom: 6.5rem;
 }
 .sub-col-landing {
   height: 20.438rem;
@@ -166,6 +166,10 @@ body {
 .small-list-li {
   font-size: $base-small-font-size;
   font-weight: 500;
+  list-style: none;
+}
+.vinder-list-bullet {
+  width: 2.188rem;
 }
 .small-text-normal {
   font-size: $base-small-font-size;
@@ -204,7 +208,7 @@ body {
   width: 16.75rem;
   height: 3.438rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-radius: 40px;
   font-size: 24px;
@@ -212,10 +216,10 @@ body {
   bottom: 8%;
   left: 30%;
 }
-.sign-up-arrow {
+#sign-up-arrow {
   min-width: 20px;
   max-width: 54px;
-  margin-left: 10% !important;
+  margin-left: 1rem !important;
 }
 .footer-row {
   width: 100% !important;
@@ -276,10 +280,27 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+.flex-grow-small-input {
+  flex-grow: 0.3;
+}
+#city-input,
+#state-input,
+#zip-input,
+#exp-input,
+#cvv-input,
+#zip-input {
+  width: 100% !important;
+}
+.thank-you-img-title {
+  left: 20% !important;
+}
 .vinderkind-checkbox {
   width: 35px !important;
   height: 35px !important;
   border-radius: 10px !important;
+  border: 1px solid black;
+}
+.vinderkind-checkbox:checked {
   background-color: #9601c7 !important;
 }
 .medium-margin-bottom {
@@ -417,10 +438,8 @@ body {
   }
   .small-input-container {
     flex-direction: column !important;
-    .user-dynamic-input {
-      width: 100% !important;
-    }
   }
+
   .mobile-small-font {
     font-size: $base-small-font-size !important;
   }

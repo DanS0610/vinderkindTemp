@@ -30,9 +30,9 @@
         :defaultStyles="normalInputStyles"
       ></DynamicInput>
       <div class="small-input-container medium-margin-bottom">
-        <DynamicInput placeholderText="City" :defaultStyles="smallInput"></DynamicInput>
-        <DynamicInput placeholderText="State" :defaultStyles="smallInput"></DynamicInput>
-        <DynamicInput placeholderText="Zip" :defaultStyles="smallInput"></DynamicInput>
+        <DynamicInput textInputId="city-input" placeholderText="City" :defaultStyles="smallInput"></DynamicInput>
+        <DynamicInput textInputId="state-input" placeholderText="State" :defaultStyles="smallInput"></DynamicInput>
+        <DynamicInput textInputId="zip-input" placeholderText="Zip" :defaultStyles="smallInput"></DynamicInput>
       </div>
       <label class="subtitle-bold margin-small-subtitle">Payment Information</label>
       <DynamicInput
@@ -41,9 +41,9 @@
       ></DynamicInput>
       <DynamicInput placeholderText="Card Number" :defaultStyles="normalInputStyles"></DynamicInput>
       <div class="small-input-container">
-        <DynamicInput placeholderText="Exp. MM/YY" :defaultStyles="smallInput"></DynamicInput>
-        <DynamicInput placeholderText="CVV" :defaultStyles="smallInput"></DynamicInput>
-        <DynamicInput placeholderText="Zip" :defaultStyles="smallInput"></DynamicInput>
+        <DynamicInput textInputId="exp-input" placeholderText="Exp. MM/YY" :defaultStyles="smallInput"></DynamicInput>
+        <DynamicInput textInputId="cvv-input" placeholderText="CVV" :defaultStyles="smallInput"></DynamicInput>
+        <DynamicInput textInputId="zip-input" placeholderText="Zip" :defaultStyles="smallInput"></DynamicInput>
       </div>
       <div class="horizontal-justified-left small-margin-bottom">
         <input class="form-check-input vinderkind-checkbox" type="checkbox" name="" id="" />

@@ -40,7 +40,7 @@ export default {
       default: ['form-control', 'user-dynamic-input']
     },
     divClass: {
-      default: ["form-floating", "mb-3", "full-width-el"]
+      default: ["form-floating", "mb-3", "full-width-el", "flex-grow-small-input"]
     },
     requiredInput: {
       default: false

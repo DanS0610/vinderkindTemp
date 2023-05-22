@@ -18,7 +18,7 @@ console.log(store.activePage)
           >
             לערנען. לאכן. פרעגן
           </h1>
-          <h1 v-if="store.activePage === 'thankyou'" class="home-view-title">יישר כח</h1>
+          <h1 v-if="store.activePage === 'thankyou'" class="home-view-title thank-you-img-title">יישר כח</h1>
           <img src="../assets/img/kids2@2x.png" alt="boys playing" class="landing-main-img" />
         </div>
       </div>

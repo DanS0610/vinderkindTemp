@@ -111,10 +111,10 @@ export default {
 #button-1 .knobs:before {
   content: 'Mothly';
   position: absolute;
-  top: 3.4px;
-  left: 10px;
+  top: 4.4px;
+  left: 5px;
   width: 50%;
-  height: 85%;
+  height: 83%;
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -139,7 +139,7 @@ export default {
 
 #button-1 .checkbox:checked + .knobs:before {
   content: 'Yearly';
-  left: 110px;
+  left: 117px;
   background-color: white;
 }
 #button-1 .checkbox:checked + .knobs:after {

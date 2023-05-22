@@ -22,11 +22,23 @@
           <DynamicToggle @doAction="toggleSubPrice()"></DynamicToggle>
         </div>
         <div id="benefits-list" class="half-width full-height column-centered mobile-full-width">
-          <ul class="regular-list-line-height">
-            <li class="small-list-li">CD's delivered monthly</li>
-            <li class="small-list-li">Hotline with exclusive content</li>
-            <li class="small-list-li">Regular contests with prizes</li>
-            <li class="small-list-li">Stories, songs and hours of Kosher entertainment</li>
+          <ul id="benefit-list-ul" class="regular-list-line-height">
+            <li class="small-list-li">
+              <img src="../assets/img/list-bullet.png" class="vinder-list-bullet" alt="" />
+              CD's delivered monthly
+            </li>
+            <li class="small-list-li">
+              <img src="../assets/img/list-bullet.png" class="vinder-list-bullet" alt="" />
+              Hotline with exclusive content
+            </li>
+            <li class="small-list-li">
+              <img src="../assets/img/list-bullet.png" class="vinder-list-bullet" alt="" />
+              Regular contests with prizes
+            </li>
+            <li class="small-list-li">
+              <img src="../assets/img/list-bullet.png" class="vinder-list-bullet" alt="" />
+              Stories, songs and hours of Kosher entertainment
+            </li>
           </ul>
         </div>
       </div>
@@ -36,8 +48,9 @@
         for="subscription-container"
         @click="testMethod"
       >
-        <RouterLink id="sign-up-link" to="subscribe">Sign Up </RouterLink>
-        <img id="sign-up-arrow" src="../assets/img/btn-arrow.svg" alt="" />
+        <RouterLink id="sign-up-link" to="subscribe"
+          >Sign Up <img id="sign-up-arrow" src="../assets/img/btn-arrow.svg" alt="" />
+        </RouterLink>
       </label>
     </div>
   </div>
@@ -54,7 +67,7 @@ import { useActiveHomePageStore } from '../stores/activeHomePage'
 
 const store = useActiveHomePageStore()
 
-store.activePage = "home"
+store.activePage = 'home'
 
 function toggleSubPrice() {
   let monthly = document.getElementById('monthly-price')
