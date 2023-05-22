@@ -11,6 +11,7 @@
   src: url('./../fonts/Shuneet3\ Bold\ Regular.ttf');
 }
 $base-medium-font-size: 24px;
+$base-medium-large-font-size: 29px;
 $base-large-font-size: 44px;
 $base-small-font-size: 18px;
 $base-smaller-font-size: 14px;
@@ -28,12 +29,17 @@ body {
 .full-height {
   height: 100%;
 }
+#yearly-price,
+#monthly-price {
+  margin-bottom: 1.313rem !important;
+}
 .landing-main-img {
   max-width: 100%;
   max-height: 100%;
-  left: 15%;
+  left: 35%;
   position: relative;
   opacity: 1;
+  top: 35%;
 }
 .column-justified-evenly {
   display: flex;
@@ -51,6 +57,7 @@ body {
   padding-right: 1.938rem !important;
   overflow-y: scroll;
   max-height: 100%;
+  z-index: 20;
 }
 .landing-img-padding {
   padding-left: 1.188rem !important;
@@ -87,6 +94,13 @@ body {
   background-color: $base-background-yellow;
   border-radius: $base-border-radius;
 }
+.tel-col-thank {
+  height: 8.188rem;
+  width: 42.125rem !important;
+  max-width: 42.125rem !important;
+  background-color: $base-background-yellow;
+  border-radius: $base-border-radius;
+}
 .sub-row-landing {
   padding-top: 6.813rem;
   margin-bottom: 5rem;
@@ -116,12 +130,19 @@ body {
   font-size: $base-medium-font-size;
   font-weight: 600;
 }
+.subtitle-bigger {
+  font-size: $base-medium-large-font-size;
+  font-weight: 600;
+}
 .label-big-normal {
   font-size: $base-medium-font-size;
   font-weight: normal;
 }
 .margin-left-small {
   margin-left: 1rem;
+}
+.hidden-desktop {
+  display: none;
 }
 
 .subtitle-bold {
@@ -205,7 +226,7 @@ body {
   text-decoration: none;
 }
 .footer-btns {
-  border-top: 1px solid #707070;
+  border-top: 1px solid black;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -229,6 +250,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid #0000001a;
 }
 .home-view-title {
   font-family: 'Shuneet3 Bold Regular';
@@ -293,8 +315,145 @@ body {
 #sub-btn {
   margin-bottom: 1.688rem !important;
 }
+.mobile-collapsed-nav {
+  display: none;
+}
 
 @media (max-width: 540px) {
+  #app {
+    height: fit-content !important;
+    overflow-x: hidden !important;
+  }
+  .full-body-container {
+    background-color: #9601c71a;
+  }
+  .router-view-container {
+    padding-bottom: 0;
+  }
+  .main-body-container {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 1rem !important;
+  }
+  .landing-image-container {
+    background-color: transparent;
+  }
+  .title-row-landing {
+    display: none !important;
+  }
+  .landing-img-padding {
+    max-height: 33rem;
+    transition: all 0.1s ease 0s;
+  }
+  .landing-main-img {
+    max-width: 30rem;
+    left: 0%;
+    top: 0;
+    position: relative;
+    opacity: 1;
+    z-index: 21;
+  }
+  .landing-title-img {
+    width: 11.688rem;
+    height: 3.438rem;
+  }
+  .full-screen-nav {
+    display: none !important;
+  }
+  .mobile-collapsed-nav {
+    display: block;
+  }
+  .home-view-title {
+    display: none;
+  }
+  .tel-row-landing {
+    padding-top: 0;
+    width: 100% !important;
+  }
+  .tel-col-landing {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: transparent;
+  }
+  .tel-col-thank {
+    width: 100% !important;
+    max-width: 100% !important;
+    background-color: $base-background-yellow;
+  }
+  .sub-row-landing {
+    padding-top: 2rem;
+    max-width: 100% !important;
+  }
+  .sub-col-landing {
+    height: fit-content;
+    max-width: 100% !important;
+    height: 30rem !important;
+  }
+  .mobile-full-width {
+    width: 100% !important;
+  }
+  #subscription-container {
+    flex-direction: column !important;
+  }
+  #sign-up-label {
+    bottom: 1.5rem !important;
+    left: 13% !important;
+  }
+  #price-toggle {
+    height: 40% !important;
+  }
+  #benefits-list {
+    height: 45% !important;
+  }
+  .footer-row {
+    height: 3rem !important;
+  }
+  .footer-copyright p {
+    margin-top: revert;
+  }
+  .subscbibe-form-div {
+    max-width: 100%;
+  }
+  .small-input-container {
+    flex-direction: column !important;
+    .user-dynamic-input {
+      width: 100% !important;
+    }
+  }
+  .mobile-small-font {
+    font-size: $base-small-font-size !important;
+  }
+  .mobile-medium-font {
+    font-size: $base-medium-font-size !important;
+  }
+  .mobile-large-font {
+    font-size: 36px !important;
+  }
+  #sub-btn,
+  #account-btn {
+    max-width: 100% !important;
+    font-size: $base-medium-font-size !important;
+    color: white !important;
+  }
+  .mobile-90-percent {
+    width: 90% !important;
+  }
+  .hidden-desktop {
+    display: block;
+  }
+  #thank-you-row-t1 {
+    margin-bottom: 5rem;
+  }
+  #thank-you-row-t3 {
+    margin-bottom: 2.7rem;
+  }
+  #tel-row-thank {
+    margin-bottom: 1rem;
+  }
+  #copyright-text {
+    font-size: 13px !important;
+  }
 }
 // @media (min-width: 540px) and (max-width: 720px) {
 // }

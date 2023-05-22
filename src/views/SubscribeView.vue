@@ -21,7 +21,7 @@
       ></DynamicInput>
       <div class="horizontal-justified-left medium-margin-bottom">
         <input class="form-check-input vinderkind-checkbox" type="checkbox" />
-        <label class="label-big-normal margin-left-small">Sign up for Vinderkind emails</label>
+        <label class="label-big-normal margin-left-small mobile-small-font">Sign up for Vinderkind emails</label>
       </div>
       <label class="subtitle-bold margin-small-subtitle">Delivery Information</label>
       <DynamicInput placeholderText="Address" :defaultStyles="normalInputStyles"></DynamicInput>
@@ -47,7 +47,7 @@
       </div>
       <div class="horizontal-justified-left small-margin-bottom">
         <input class="form-check-input vinderkind-checkbox" type="checkbox" name="" id="" />
-        <label class="label-big-normal margin-left-small"
+        <label class="label-big-normal margin-left-small mobile-small-font"
           >Automatically renew my subscription</label
         >
       </div>
@@ -64,7 +64,7 @@
         :defaultStyles="signUpBtnStyles"
       ></DynamicButton>
       <div id="terms-conditions-container" class="column-centered small-margin-bottom">
-        <p class="small-text-normal text-centered width-60-percent">
+        <p class="small-text-normal text-centered width-60-percent mobile-small-font mobile-90-percent">
           By clicking on the subscribe button, you agree with our
           <a class="no-decoration-vinderkind" href="http://">terms and conditions</a> &
           <a class="no-decoration-vinderkind" href="">cancelation policy.</a>
@@ -83,6 +83,11 @@
 import HalfSizeNavBar from '../components/layout/HalfSizeNavBar.vue'
 import DynamicInput from '../components/inputs/DynamicInput.vue'
 import DynamicButton from '../components/buttons/DynamicButton.vue'
+import { useActiveHomePageStore } from '../stores/activeHomePage'
+
+const store = useActiveHomePageStore()
+
+store.activePage = "subscribe"
 
 const normalInputStyles = [
   {

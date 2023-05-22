@@ -6,6 +6,7 @@ import SubscribeView from '../views/SubscribeView.vue'
 import ContactView from '../views/ContactView.vue'
 import ManageSubscriptionView from '../views/ManageSubscription.vue'
 import GetUpdatesView from '../views/GetUpdatesView.vue'
+import ThankYouView from '../views/ThankYouView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -40,6 +41,11 @@ const router = createRouter({
           name: 'getupdates',
           component: GetUpdatesView
         },
+        {
+          path: 'thankyou',
+          name: 'thankyou',
+          component: ThankYouView
+        }
       ]
     }
   ]
