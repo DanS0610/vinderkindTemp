@@ -339,6 +339,142 @@ body {
 .mobile-collapsed-nav {
   display: none;
 }
+.contact-box-height {
+  height: 13.875rem !important;
+}
+.contact-box-margin-bottom {
+  margin-bottom: 6.125rem;
+}
+.box-label {
+  background: #9601c7 0% 0% no-repeat padding-box;
+  border-radius: 40px;
+  opacity: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  width: 20.688rem;
+  height: 3.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 15.6rem;
+  left: 25%;
+}
+.box-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-img-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.box-list-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.box-img {
+  width: 11.5rem;
+  height: 11.125rem;
+}
+.box-list-img {
+  background: rgba(150, 1, 199, 0.0980392157) 0% 0% no-repeat padding-box;
+  padding: 4px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+.box-list {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  line-height: 2.3rem;
+}
+.box-list {
+  li {
+    list-style: none;
+    span {
+      font-size: 18px;
+      font-weight: normal;
+    }
+    .vinder-link {
+      text-decoration: none;
+      color: #9601c7;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}
+.footer-form {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer-btn-div {
+      width: 20%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .form-input-div {
+      height: 3rem;
+      width: 75%;
+    }
+    div {
+      input {
+        width: 100%;
+        height: 44px;
+        border: 1px solid #000000;
+        border-radius: 25px;
+        padding: 1rem;
+      }
+
+      input::placeholder {
+        color: #cdcdcd;
+        font-weight: normal;
+        font-size: 16px;
+        margin-left: 20px;
+      }
+      button {
+        width: 29%;
+        height: 34px;
+        background: #9601c7 0% 0% no-repeat padding-box;
+        border-radius: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        position: relative;
+        bottom: 2.4rem;
+        left: 70%;
+        border: none;
+      }
+      .form-router {
+        font-weight: 900;
+        color: #b7aabb;
+        text-decoration: none;
+      }
+      label {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+}
 
 @media (max-width: 540px) {
   #app {

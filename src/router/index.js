@@ -37,8 +37,8 @@ const router = createRouter({
           component: ManageSubscriptionView
         },
         {
-          path: 'getupdates',
-          name: 'getupdates',
+          path: 'newsletter',
+          name: 'newsletter',
           component: GetUpdatesView
         },
         {
